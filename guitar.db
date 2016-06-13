@@ -1,0 +1,40 @@
+-- --------------------------------------------------------
+-- 主机:                           127.0.0.1
+-- 服务器版本:                        10.0.17-MariaDB - mariadb.org binary distribution
+-- 服务器操作系统:                      Win32
+-- HeidiSQL 版本:                  9.1.0.4867
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- 导出  表 guitar.goods 结构
+CREATE TABLE IF NOT EXISTS `goods` (
+  `goodsNumber` varchar(200) DEFAULT NULL COMMENT '商品编号',
+  `goodsName` varchar(200) DEFAULT NULL COMMENT '商品名称',
+  `goodsBrand` varchar(200) DEFAULT NULL COMMENT '商品品牌',
+  `goodsCategory` varchar(200) DEFAULT NULL COMMENT '商品类别',
+  `goodsClass` varchar(200) DEFAULT NULL COMMENT '商品等级',
+  `goodsMaterial` varchar(200) DEFAULT NULL COMMENT '商品材质',
+  `goodsColor` varchar(200) DEFAULT NULL COMMENT '商品颜色',
+  `goodsPrice` double DEFAULT NULL COMMENT '商品价格',
+  `quantity` int(11) DEFAULT NULL COMMENT '商品数量'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='商品信息表';
+
+-- 正在导出表  guitar.goods 的数据：~4 rows (大约)
+/*!40000 ALTER TABLE `goods` DISABLE KEYS */;
+INSERT INTO `goods` (`goodsNumber`, `goodsName`, `goodsBrand`, `goodsCategory`, `goodsClass`, `goodsMaterial`, `goodsColor`, `goodsPrice`, `quantity`) VALUES
+	('001', 'Yamahaéé©¬åf310 f600 åå­¦èå¥é¨æ°æç»ä¹ 41å¯¸æ°è°£æ¨åä»', 'éé©¬å', 'æ°è°£åä»', 'ä¸ä¸çº§', 'äºææ¨+æ¡è±å¿æ¨+ç«ç°æ¨', 'åæ¨è²', 899, 20),
+	('002', 'framusé£é­å£«sevillaå¿ç«¥å¤å¸åä»åå­¦èå¥é¨èªå­¦æ°æç»ä¹ æ¨åå®', 'é£é­å£«', 'å¤å¸åä»', 'ä¸ä¸çº§', 'äºææ¨+ç«ç°æ¨+æ¤´æ¨', 'åæ¨è²', 1000, 30),
+	('001', 'Yamahaéé©¬åf310 f600 åå­¦èå¥é¨æ°æç»ä¹ 41å¯¸æ°è°£æ¨åä»', 'éé©¬å', 'æ°è°£åä»', 'ä¸ä¸çº§', 'äºææ¨+æ¡è±å¿æ¨+ç«ç°æ¨', 'åæ¨è²', 899, 20),
+	('002', 'framusé£é­å£«sevillaå¿ç«¥å¤å¸åä»åå­¦èå¥é¨èªå­¦æ°æç»ä¹ æ¨åå®', 'é£é­å£«', 'å¤å¸åä»', 'ä¸ä¸çº§', 'äºææ¨+ç«ç°æ¨+æ¤´æ¨', 'åæ¨è²', 1000, 30),
+	('001', 'Yamahaéé©¬åf310 f600 åå­¦èå¥é¨æ°æç»ä¹ 41å¯¸æ°è°£æ¨åä»', 'éé©¬å', 'æ°è°£åä»', 'ä¸ä¸çº§', 'äºææ¨+æ¡è±å¿æ¨+ç«ç°æ¨', 'åæ¨è²', 899, 20),
+	('002', 'framusé£é­å£«sevillaå¿ç«¥å¤å¸åä»åå­¦èå¥é¨èªå­¦æ°æç»ä¹ æ¨åå®', 'é£é­å£«', 'å¤å¸åä»', 'ä¸ä¸çº§', 'äºææ¨+ç«ç°æ¨+æ¤´æ¨', 'åæ¨è²', 1000, 30),
+	('001', 'Yamahaéé©¬åf310 f600 åå­¦èå¥é¨æ°æç»ä¹ 41å¯¸æ°è°£æ¨åä»', 'éé©¬å', 'æ°è°£åä»', 'ä¸ä¸çº§', 'äºææ¨+æ¡è±å¿æ¨+ç«ç°æ¨', 'åæ¨è²', 899, 20),
+	('002', 'framusé£é­å£«sevillaå¿ç«¥å¤å¸åä»åå­¦èå¥é¨èªå­¦æ°æç»ä¹ æ¨åå®', 'é£é­å£«', 'å¤å¸åä»', 'ä¸ä¸çº§', 'äºææ¨+ç«ç°æ¨+æ¤´æ¨', 'åæ¨è²', 1000, 30);
+/*!40000 ALTER TABLE `goods` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
